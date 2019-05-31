@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="unselect">#676767</color>
+    <color name="tvtitle">#323232</color>
+    <color name="tvhint">#646464</color>
+    <color name="gray">#737171</color>
+    <color name="divider_line">#e1e1e1</color>
+    <color name="line_bg">#eaeaea</color>
+
+    <color name="yellowdraw">#78f8cd42</color>
+    <color name="yellow">#f8cd42</color>
+    <color name="yellowbtn">#f9dd89</color>
+    <color name="yellowtitle">#f6c73c</color>
+    <color name="orangetitle">#f9a968</color>
+    <color name="recordtext">#f8a442</color>
+
+    <color name="rednotcomplete">#de311a</color>
+    <color name="redtext">#ff0000</color>
+    <color name="greedcomplete">#14c84b</color>
+    
+    <color name="authentitle">#f9a968</color>
+    <color name="color_red">#FF5722</color>
+    <color name="color_orange">#FF9800</color>
+    <color name="color_yellow">#FFC107</color>
+    <color name="color_green">#3FB830</color>
+    <color name="color_blue">#00BAED</color>
+    <color name="color_yellow2">#FF7342</color>
+
+
+
+</resources>

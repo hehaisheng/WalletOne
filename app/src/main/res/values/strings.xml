@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">易借宝</string>
+    <string name="protocol">《用户授权协议》</string>
+
+    <string name="protocolrepay">易借宝用户协议 用户隐私政策</string>
+    <string name="protocoluserinfo">个人信息使用授权</string>
+    <string name="protocolCreditInvestigation">个人征信授权书</string>
+    <string name="protocolrepaycontract">借款合同</string>
+    <string name="protocolacceeptrepay">委托扣款协议书</string>
+    <string name="protocolregister">《易借宝注册协议》</string>
+
+
+
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="setup_gesture_pattern">绘制解锁图案</string>
+    <string name="setup_gesture_pattern_again">再次绘制解锁图案</string>
+    <string name="forget_gesture_code">忘记手势密码?</string>
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="set_gesture_pattern">绘制解锁图案</string>
+    <string name="set_gesture_pattern_reason">设置手势密码，防止他人未经授权查看</string>
+    <string name="reset_gesture_code">重新设置手势密码</string>
+
+    <string name="about_text">\u3000\u3000本贷款是针对有稳定工作且信用状况良好的自然人，提供小额信用借款的咨询服务平台，满足该类人群的短期资金需求，属于无抵押无担保的信用型借款产品。本贷提供1000–3000元不等的小额借款，7  天借款周期，具有随借随还的灵活便捷性特点。本贷采用互联网大数据风控审核系统，快速审核，到账速度快。</string>
+
+    <string name="service_text1">【重磅消息】易借宝已于11月15日已成功对接央行征信，逾期不还者将上央行黑名单!</string>
+    <string name="service_text2">\u3000\u30002018年9月27日，易借宝联合第三方保险、担保及资金处置机构正式开启了中国人民银行征信对接机制，经过中国人民银行总行(下称央行)的严格审核，<font color="#ef2f65"> 2018年11月15日易借宝已完成整个系统对接过程，正式接入央行征信系统。</font></string>
+    <string name="service_text3">\u3000\u3000今年9月底，易借宝通过与第三方机构合作的方式创新接入央行征信中心，<font color="#ef2f65">11月15日成功对接央行征信后易借宝已将首批逾期用户名单进行上报央行征信，此后，易借宝的逾期信息将会被实时上报至央行征信中心，成为目前行业中极具严厉和实时性的逾期惩治措施，对逃废债、恶意逾期直击要害，为平台风控再添重型武器，</font>此次接入央行征信系统，足见易借宝保护出借人权益的实力和决心，用实际行动提振出借人信心。</string>
+    <string name="service_text4">\u3000\u3000易借宝负责人认为，由于各种原因，网贷行业尚未能直接对接央行征信系统，但作为打击恶意失信最严厉、同时也是保护出借人利益最见效的手段，在行业空前低迷之时，对接需求刻不容缓。</string>
+    <string name="service_text5">\u3000\u3000近日，北京市金融工作局对外发布《打击网贷恶意失信行为的公告》，除呼吁要大力打击逃废债、逐步实现对所有失信人员的信用惩戒外，强调合法债务始终受法律保护、督促借款人积极履行还款义务的表述引人注目。</string>
+    <string name="service_text6">\u3000\u3000近几个月来，恶意逾期、逃废债等失信行为在网贷行业横行肆虐，其中的重要原因之一是一批借款人抱有“拖垮平台，就不用还钱”的侥幸心理。对此，上述公告强调:无论网贷平台是否正常运营，借款人与投资人合法的债权债务关系均受到法律保护，不会因网贷平台是否倒闭而灭失。因此<font color="#ef2f65">请各借款人积极履行还款义务，保障各方合法权益。针对恶意逃废债的失信借款人信息将纳入征信系统，并通过网站予以公示。</font></string>
+
+    
+    <string name="arbitration_text1">\u3000\u3000继上周公布第一批仲裁名单后，易借宝继续公布第二批仲裁名单，打击“老赖”行动将持续进行，我们绝不手软!以下是易借宝第二批已仲裁用户名单仲裁名单内的用户须10日内进行还款，如未在10日内进行还款，债权人将强制执行!我们将持续进行公布已仲裁用户名单，希望已逾期用户积极履行还款义务尽快还款，做到守护信用、爱护信用。</string>
+    <string name="arbitration_text2">\u3000\u3000针对积极还款用户将被撤销仲裁，针对拒绝还款用户将向法院申请强制执行，裁决书规定时限内仍未还款用户将被列入失信被执行人名单，逾期记录将同步至中国人民银行征信系统，造成信誉、出行及工作等均受影响!点击蓝字了解具体影响[易借宝逾期仲裁公告]内附逾期者名单(点击文字可查看文章)。</string>
+    <string name="arbitration_text3">\u3000\u3000易借宝有权将逾期用户失信行为，上报至相关征信机构，通过网络、媒体披露其违约行为，请各位逾期用户珍惜信誉，爱惜信誉才能有借有还，再借不难!同时我们也感谢一直维护与支持易借宝的优质借款用户，因为有你们,易借宝才能健康发展。</string>
+    
+    
+    
+    
+</resources>

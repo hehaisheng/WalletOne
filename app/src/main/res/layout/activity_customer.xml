@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/common_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ly_about"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/tvtitle"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:text="工作时间(法定节假日除外)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/tvtitle"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"
+                android:text="周一至周五：09:00-12:00,13:30-18:00" />
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_marginTop="32dp"
+                android:src="@mipmap/customer_qrcode"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="15sp"
+                android:text="关注微信“易借宝官方”公众号"
+                android:textColor="@color/tvtitle"/>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_copywechatId"
+                    android:textSize="15sp"
+                    android:text="复制微信号"
+                    android:textColor="@android:color/white"
+                    android:background="@mipmap/customer_btnbg"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_saveQRCode"
+                    android:layout_marginStart="15dp"
+                    android:textSize="15sp"
+                    android:text="保存二维码图片"
+                    android:textColor="@android:color/white"
+                    android:background="@mipmap/customer_btnbg"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

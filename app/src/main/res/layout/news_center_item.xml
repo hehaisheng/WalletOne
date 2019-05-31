@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_white_normal_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="一场美国内部的贸易听证会"
+            android:textColor="#323232"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/news_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="9dp"
+            android:lineSpacingExtra="3dp"
+            android:text="中国商务部新闻发言人指出，美国此举又一次将国内发凌驾于国际法之上中国商务部新闻发言人指出，美国此举又一次将国内发凌驾于国际法之上中国商务部新闻发言人指出，美国此举又一次将国内发凌驾于国际法，之上中国商务部新闻发言人指出，美国此举又一次将国内发凌驾于，国际法之上"
+            android:textColor="#646464"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="08-10  12:35"
+        android:textColor="#646464"
+        android:textSize="11sp" />
+
+
+</LinearLayout>

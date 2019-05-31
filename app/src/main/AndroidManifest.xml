@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhiyu.wallet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取wifi状态 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" /> <!-- 读取通讯录 -->
+    <!-- 动态申请 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 获取手机信息 -->
+    <!-- 动态申请 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 获取位置 -->
+    <!-- 动态申请 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 获取位置 -->
+    <!-- 动态申请 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
+
+
+
+
+    <!-- 魔蝎 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 相机 -->
+    <!-- 动态申请 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 读取sd卡 -->
+    <!-- 动态申请 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- 闪光灯 -->
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <!-- 8.0 系统跳转安装包安装页面 -->
+    <application
+        android:name=".common.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5bed32e0b465f58430000099" /> <!-- 友盟 Appkey 自己应用注册申请来的 -->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" /> <!-- 渠道号，多渠道这里使用了占位符$ -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.zhiyu.wallet.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".mvp.ui.activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Main -->
+        <activity
+            android:name=".mvp.ui.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name=".mvp.ui.activity.ProtocolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name=".mvp.ui.activity.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".mvp.ui.activity.RelativesinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.AuthenCenterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.NewsCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.HelpCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.BankInformationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.BankaddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".widget.gesture.GestureEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".widget.gesture.GestureVerifyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.AuthenticationActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+            <!--android:name=".mvp.ui.activity.IdCardActivity"-->
+            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".mvp.ui.activity.OrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.CustomerServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.ApplySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.BannerItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.RepaySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.IdCardActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".mvp.ui.activity.ShortByStagesActivity"
+            android:screenOrientation="portrait" />
+
+        <!--<activity-->
+            <!--android:name="com.moxie.client.MainActivity"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+            <!--android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />-->
+        <!--<activity-->
+            <!--android:name="com.moxie.client.accessible.AccessibleCrawlerActivity"-->
+            <!--android:launchMode="singleTask"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar" />-->
+
+        <!--<service-->
+            <!--android:name="com.moxie.client.accessible.AccessibleCrawlerService"-->
+            <!--android:accessibilityFlags="flagReportViewIds"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true"-->
+            <!--android:label="@string/accessibility_name"-->
+            <!--android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.accessibilityservice.AccessibilityService" />-->
+            <!--</intent-filter>-->
+
+            <!--<meta-data-->
+                <!--android:name="android.accessibilityservice"-->
+                <!--android:resource="@xml/accessible_crawler_config" />-->
+        <!--</service>-->
+    </application>
+
+</manifest>

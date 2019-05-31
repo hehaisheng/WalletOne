@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/common_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/divider_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="25dp">
+            
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="第一联系人"
+                android:textSize="16sp"
+                android:textColor="@color/tvtitle"
+                />
+
+            <EditText
+                android:id="@+id/et_firstname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入名字"
+                android:textSize="14sp"
+                android:textColor="@color/tvtitle"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:maxLength="4"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ly_firstContacts"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_firstContacts"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14sp"
+                    android:hint="请选择关系"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/drop_chooise"
+                    android:layout_width="17dp"
+                    android:layout_height="13dp" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_line"/>
+
+        <LinearLayout
+            android:id="@+id/ly_firstTel"
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textSize="16sp"
+                android:textColor="@color/tvtitle"
+                />
+
+            <TextView
+                android:id="@+id/tv_firstTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请选择"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@color/tvtitle"
+
+                />
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/contacts"
+                android:layout_marginEnd="25dp"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@color/divider_line"/>
+
+
+        <LinearLayout
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="紧急联系人"
+                android:textSize="16sp"
+                android:textColor="@color/tvtitle"
+                />
+
+            <EditText
+                android:id="@+id/et_urgentname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入名字"
+                android:textSize="14sp"
+                android:textColor="@color/tvtitle"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:background="@null"
+                android:maxLength="4"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/ly_urgentContacts"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_urgentContacts"
+                    android:layout_marginEnd="5dp"
+                    android:textSize="14sp"
+                    android:hint="请选择关系"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:src="@mipmap/drop_chooise"
+                    android:layout_width="17dp"
+                    android:layout_height="13dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_line"/>
+
+        <LinearLayout
+            android:id="@+id/ly_urgentTel"
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textSize="16sp"
+                android:textColor="@color/tvtitle"
+                />
+
+            <TextView
+                android:id="@+id/tv_urgentTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请选择"
+                android:textSize="14sp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@color/tvtitle"
+                />
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="17dp"
+                android:src="@mipmap/contacts"
+                android:layout_marginEnd="25dp"
+                />
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginStart="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_line"/>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/line_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_yellow"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="提交" />
+    </RelativeLayout>
+
+</LinearLayout>

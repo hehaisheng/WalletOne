@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingMode="stack"
+    android:paddingStart="0dp"
+    android:paddingEnd="22dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp">
+    <item
+        android:gravity="end|fill_vertical"
+        android:width="100dp"
+        android:drawable="@drawable/q1"
+         />
+
+    <item
+        android:drawable="@drawable/drop_chooise"
+        android:gravity="end|center_vertical"
+        android:width="12dp"
+        android:height="12dp"
+        android:end="5dp" />
+</layer-list>

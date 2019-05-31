@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/common_title"/>
+
+    <View
+        android:background="@color/line_bg"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+    
+    
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:layout_marginTop="55dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/applysuccess_item1"
+            android:adjustViewBounds="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="亲，您的借款申请已在审核"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/tvtitle"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="请耐心等待，审核大概需要10分钟左右"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_marginTop="23dp"
+        android:textSize="18sp"
+        android:text="关闭"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:background="@mipmap/btn_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

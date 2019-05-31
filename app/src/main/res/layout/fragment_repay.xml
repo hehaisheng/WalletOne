@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ly_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/yellowtitle"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="19sp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        app:srlPrimaryColor="@color/colorPrimary"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnableHeaderTranslationContent="false"
+        app:srlEnablePreviewInEditMode="false"
+        app:srlEnableNestedScrolling="true">
+        <com.scwang.smartrefresh.header.MaterialHeader
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"/>
+
+      <RelativeLayout
+        android:background="@color/line_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_repaybg"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:background="@mipmap/repay_back"
+            android:orientation="vertical"/>
+
+        <TextView
+            android:id="@+id/tv_repayAmount"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_repayAmount"
+            android:layout_centerHorizontal="true"
+            android:text="待还金额(元)"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:id="@+id/btn_repay"
+            android:layout_below="@+id/textview"
+            android:layout_centerHorizontal="true"
+            android:text="立即还款"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:background="@drawable/repay_translator"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/linearyout"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/btn_repay"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/repay_while">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/tvhint"
+                    android:textSize="11sp"
+                    android:text="待还总笔数"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_repaymount"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/tvtitle"
+                    android:textSize="14sp"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/yellow"
+                android:layout_gravity="center_vertical"
+                android:layout_width="1dp"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/tvhint"
+                    android:textSize="11sp"
+                    android:text="最近账单(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_latesrepaybill"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/tvtitle"
+                    android:textSize="14sp"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View
+                android:background="@color/yellow"
+                android:layout_gravity="center_vertical"
+                android:layout_width="1dp"
+                android:layout_height="30dp"/>
+            <LinearLayout
+                android:id="@+id/ly_finedetail"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/tvhint"
+                    android:textSize="11sp"
+                    android:text="最近还款日期"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_latesrepaytime"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/tvtitle"
+                    android:textSize="14sp"
+                    android:text="- -"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:visibility="invisible"
+                        android:id="@+id/tv_lateTime"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:text=""
+                        android:drawableEnd="@mipmap/question_red"
+                        android:drawablePadding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/repay_while"
+            android:layout_below="@id/linearyout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_time"
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/timebutton"
+                        android:text="时间"
+                        android:textSize="12sp"
+                        android:textColor="@color/tvhint" />
+
+                    <Button
+                        android:id="@+id/btn_status"
+                        android:layout_width="35dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/statusbutton"
+                        android:textColor="@android:color/white"
+                        android:text="状态"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:textColor="@color/tvtitle"
+                    android:textSize="15sp"
+                    android:text="历史记录"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dedede"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="时间"
+                    android:textColor="#424242"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="借款金额(元)"
+                    android:textColor="#424242"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="还款日期"
+                    android:textColor="#424242"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="状态"
+                    android:textColor="#424242"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rv_connectfailure"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/iv1"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_empty_page"
+                    android:layout_width="70dp"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv1"
+                    android:text="网络请求失败"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text="下拉刷新"
+                    android:textSize="11sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

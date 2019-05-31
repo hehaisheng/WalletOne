@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff"
+        >
+
+        <LinearLayout
+            android:id="@+id/ly_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/iv_title_back"
+                android:layout_width="10dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/return_black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="银行信息"
+            android:textColor="@color/tvtitle"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:text="请填写您的收款银行信息"
+                android:textColor="#646464"
+                android:textSize="17sp" />
+
+
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="35dp"-->
+                <!--android:background="@drawable/btn_white_normal_bg"-->
+                <!--android:layout_marginStart="35dp"-->
+                <!--android:layout_marginEnd="35dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--&gt;-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_marginStart="20dp"-->
+                    <!--android:drawableStart="@mipmap/bank_zfb"-->
+                    <!--android:drawablePadding="5dp"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="支付宝收款"-->
+                    <!--android:textColor="#323232"-->
+                    <!--android:textSize="15sp" />-->
+
+                    <!--<com.zhiyu.wallet.widget.CheckBoxSample-->
+                        <!--android:id="@+id/zfb_checkbox"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:layout_alignParentEnd="true"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_marginEnd="20dp"-->
+                        <!--app:size="20dp"-->
+                        <!--app:color_background="@color/greedcomplete"-->
+                        <!--app:color_border="@color/tvtitle"-->
+                        <!--/>-->
+
+
+                <!--</RelativeLayout>-->
+
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="#eeeeee" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_zfb"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_marginLeft="20dp"-->
+                    <!--android:background="@null"-->
+                    <!--android:hint="请填写支付宝账号"-->
+                    <!--android:textColorHint="#c0c0c0"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:inputType="textEmailAddress|number"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_marginBottom="20dp"-->
+                    <!--android:textSize="15sp" />-->
+
+            <!--</LinearLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_white_normal_bg"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@mipmap/bank_logo"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="银行信息"
+                    android:textColor="#323232"
+                    android:textSize="15sp" />
+
+                <!--<com.zhiyu.wallet.widget.CheckBoxSample-->
+                    <!--android:id="@+id/bank_checkbox"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginEnd="20dp"-->
+                    <!--app:size="20dp"-->
+                    <!--app:color_background="@color/greedcomplete"-->
+                    <!--app:color_border="@color/tvtitle"-->
+                    <!--/>-->
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#eeeeee" />
+
+                <LinearLayout
+                    android:id="@+id/ly_addTextview"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/ly_addbank"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/bank_add"
+                        android:adjustViewBounds="true"
+                        android:layout_width="45dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="添加银行卡"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btn_confirm"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/btn_yellow"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
